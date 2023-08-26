@@ -1,0 +1,28 @@
+@import './base.css';
+@import url("@mdi/font/css/materialdesignicons.css");
+
+#app {
+
+}
+
+
+
+.m1{
+    margin-inline: 20px;
+}
+
+.subtitle {
+
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.title {
+    font-family: 'Bebas';
+    font-size: 3em;
+    font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+
+}
