@@ -115,4 +115,46 @@ export default{
         }
     }
 }
+
+@media (max-width: 600px) {
+    .testimonial{
+        width: 100%;
+        grid-template-areas: 
+            
+            "a b b"
+            "a b b"
+            "c d d";
+        }
+        
+        .img5{
+            grid-area: d;
+            align-self: end !important;
+
+        }
+        .img1{
+            display: none;
+        }
+        .article{
+            grid-area: b;
+            margin: 0 !important;
+            padding: 0;
+            align-items: start !important;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+        }
+        .img2{
+            grid-area: a;
+            align-self: start !important;
+            width: 100px;
+            height: auto !important;
+        }
+        .img3{
+           display: none;
+        }
+        .img4{
+            grid-area: c;
+        }
+        
+}
 </style>

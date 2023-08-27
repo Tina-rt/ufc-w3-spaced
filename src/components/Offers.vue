@@ -49,4 +49,9 @@ export default {
     display: flex;
     flex-direction: row;
 }
+@media (max-width: 600px) {
+    .offer-list{
+        flex-direction: column;
+    }
+}
 </style>

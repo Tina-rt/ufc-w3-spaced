@@ -5,6 +5,8 @@ import Offers from "./components/Offers.vue";
 import Suit from "./components/Suit.vue";
 import OtherWorld from "./components/OtherWorld.vue";
 import Testimonials from "./components/Testimonials.vue";
+import Plan from "./components/Plan.vue";
+import Footer from "./components/Footer.vue";
 
 export default{
   components:{
@@ -13,7 +15,9 @@ export default{
     Offers,
     Suit,
     OtherWorld,
-    Testimonials
+    Testimonials,
+    Plan,
+    Footer
   }
 }
 
@@ -27,6 +31,8 @@ export default{
     <Suit />
     <OtherWorld />
     <Testimonials />
+    <Plan />
+    <Footer />
   </main>
 </template>
 
@@ -39,5 +45,11 @@ export default{
   top: 100px;
   height: 100vh;
   z-index: 10;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 </style>

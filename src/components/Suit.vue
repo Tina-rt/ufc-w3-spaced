@@ -4,7 +4,15 @@ import Border from './Border.vue';
 export default{
     components:{
         Border
-    }
+    },
+    data(){
+        let screenw = window.innerWidth
+        
+        return {
+            screenw
+        }
+    },
+    
 }
 </script>
 
@@ -22,7 +30,7 @@ export default{
                 <div class="info-aside">2022 UPGRADE</div>
             </div>
             <Border />
-            <div class="suit-p">
+            <div v-if="screenw > 600" class="suit-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
                 ex. Fugit id voluptatibus est labore reiciendis corporis sit. Temporibus blanditiis aperiam saepe tempore,
                 esse a iusto iste? Praesentium, itaque? Voluptatem?
@@ -57,6 +65,39 @@ export default{
             </div>
 
         </div>
+        <div v-if="screenw <= 600" class="suit-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+                ex. Fugit id voluptatibus est labore reiciendis corporis sit. Temporibus blanditiis aperiam saepe tempore,
+                esse a iusto iste? Praesentium, itaque? Voluptatem?
+                <div class="suit-desc">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="value">50%</div>
+                                <div class="label">LIGHTER</div>
+                            </td>
+                            <td>
+                                <div class="value">HUD</div>
+                                <div class="label">CONTROLS</div>
+                            </td>
+                            <td>
+                                <div class="value">8HRS</div>
+                                <div class="label">OXYGEN</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="no-border"></td>
+                            <td colspan="2" class="">
+                                <div class="learn-more-section">
+
+                                    <div class="learn-more">LEARN MORE</div>
+                                    <div class="btn-aside">></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
     </div>
 </template>
 
@@ -157,4 +198,26 @@ export default{
         }
 
     }
-}</style>
+}
+
+@media (max-width: 600px) {
+    .suit-p{
+        margin: 0;
+        padding: 0;
+    }
+    .suit-section{
+        flex-direction: column;
+        align-items: center;
+        
+        .suit-image{
+            width: 100%;
+        }
+        .suit-body{
+            width: 90%;
+            margin: 0;
+            padding: 0;
+        }
+        
+    }
+}
+</style>

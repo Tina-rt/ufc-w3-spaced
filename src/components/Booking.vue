@@ -1,3 +1,20 @@
+<script>
+export default{
+    
+    data(){
+        return {
+            screenw: window.innerWidth
+        }
+    },
+    mounted(){
+        window.addEventListener('resize', ()=>{
+            this.screenw = window.innerWidth
+        })
+    }
+}
+</script>
+
+
 <template>
     <div class="booking">
         <div class="form-book">
@@ -24,8 +41,14 @@
                             <option value="2">2 ADULTS</option>
                         </select>
                     </td>
-                    <td>
+                    <td class="search-section">
                         <div class="btn-search">SEARCH</div>
+                    </td>
+                </tr>
+                <tr class="search-section-resp" v-if="screenw < 600" >
+                    <td colspan="3">
+                        <div class="btn-search">SEARCH</div>
+
                     </td>
                 </tr>
             </table>
@@ -79,4 +102,22 @@
     width: 100%;
     text-align: center;
 }
+
+
+
+@media (max-width: 600px) {
+    .booking{
+        /* transform: translateY(100%); */
+        margin: 50px 0;
+        position: unset;
+    }
+    .form-book{
+        padding: 0;
+    }
+    .search-section{
+        display: none;
+    }
+    
+}
+
 </style>

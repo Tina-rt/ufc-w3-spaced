@@ -2,7 +2,7 @@
 @import url("@mdi/font/css/materialdesignicons.css");
 
 #app {
-
+    overflow-x: hidden;
 }
 
 

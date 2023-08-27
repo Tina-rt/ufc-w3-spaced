@@ -37,9 +37,10 @@ export default{
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 .card {
+    opacity: 0.5;
     margin: 50px 40px;
     /* overflow: hidden; */
     position:relative;
@@ -48,12 +49,23 @@ export default{
     justify-content: space-between;
     align-items: center;
     width: 400px;
+    @media (max-width: 600px) {
+        width: 300px;
+    }
     height: 500px;
     background-size: cover;
     background-position-x: center;
+    background-repeat: no-repeat;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.4s ease;
 }
+
+.card:hover{
+    opacity: 1;
+}
+
+
 
 .corner-section{
     overflow: hidden;
