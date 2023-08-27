@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/ufc-w2-spaced/',
+  base: '/ufc-w3-spaced/',
   plugins: [
     vue(),
   ],
