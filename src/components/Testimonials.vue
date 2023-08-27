@@ -1,8 +1,10 @@
 <script>
 import Border from './Border.vue';
+import Image from './Image.vue';
 export default{
     components:{
-        Border
+        Border,
+        Image
     }
 }
 </script>
@@ -33,13 +35,13 @@ export default{
             </div>
         </div>
         <div class="img-container img3">
-            <img src="/images/test/base.jpg" alt="">
+            <Image img="/images/test/base.jpg" />
         </div>
         <div class="img-container img4">
-            <img src="/images/mars_img.jpg" alt="">
+            <Image img="/images/mars_img.jpg" ></Image>
         </div>
         <div class="img-container img5">
-            <img src="/images/test/astronaut.jpg" alt="">
+            <Image img="/images/test/astronaut.jpg"></Image>
         </div>
     </div>
 </template>
