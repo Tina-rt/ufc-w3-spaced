@@ -12,10 +12,10 @@ export default{
 <template>
     <div class="testimonial">
         <div class="img-container img1">
-            <img src="/images/test/landscape mountain.jpg" alt="landscape">
+            <Image img="/images/test/landscape mountain.jpg" ></Image>
         </div>
         <div class="img-container img2">
-            <img src="/images/spaship.png" alt="">
+            <Image img="/images/spaship.png" ></Image>
         </div>
         <div class="article">
             <div class="article-header">
