@@ -14,9 +14,9 @@ export default {
             <div class="offer-title">ADVENTURES</div>
         </div>
         <div class="offer-list">
-            <CardOffer corner="-20%" planet_img="/images/moon.png" image="/images/moon_img.jpg" title="DUNE BUGGY TOUR" subtitle="Moon" price="999"/>
-            <CardOffer planet_img="/images/mars.png" image="/images/mars_img.jpg" title="CANYON ADVENTURES" subtitle="Mars" price="1900" />
-            <CardOffer planet_img="/images/neptune.png" image="/images/neptune.jpg" title="OCEAN AERIAL TOUR" subtitle="Neptune" price="5000" />
+            <CardOffer corner="-20%" planet_img="./images/moon.png" image="./images/moon_img.jpg" title="DUNE BUGGY TOUR" subtitle="Moon" price="999"/>
+            <CardOffer planet_img="./images/mars.png" image="./images/mars_img.jpg" title="CANYON ADVENTURES" subtitle="Mars" price="1900" />
+            <CardOffer planet_img="./images/neptune.png" image="./images/neptune.jpg" title="OCEAN AERIAL TOUR" subtitle="Neptune" price="5000" />
         </div>
     </div>
 </template>

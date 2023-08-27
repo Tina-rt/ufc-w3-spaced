@@ -12,10 +12,10 @@ export default{
 <template>
     <div class="testimonial">
         <div class="img-container img1">
-            <Image img="/images/test/landscape mountain.jpg" ></Image>
+            <Image img="./images/test/landscape mountain.jpg" ></Image>
         </div>
         <div class="img-container img2">
-            <Image img="/images/spaship.png" ></Image>
+            <Image img="./images/spaship.png" ></Image>
         </div>
         <div class="article">
             <div class="article-header">
@@ -35,13 +35,13 @@ export default{
             </div>
         </div>
         <div class="img-container img3">
-            <Image img="/images/test/base.jpg" />
+            <Image img="./images/test/base.jpg" />
         </div>
         <div class="img-container img4">
-            <Image img="/images/mars_img.jpg" ></Image>
+            <Image img="./images/mars_img.jpg" ></Image>
         </div>
         <div class="img-container img5">
-            <Image img="/images/test/astronaut.jpg"></Image>
+            <Image img="./images/test/astronaut.jpg"></Image>
         </div>
     </div>
 </template>
